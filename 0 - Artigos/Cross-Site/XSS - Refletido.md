@@ -26,13 +26,13 @@ Nós encontramos XSS em pontos de entrada dentro de um site! Como uma barra de p
 
 Então abrindo o metasploitable e indo para a aba de "xss", podemos ver esse campo de inserção perguntando o nosso nome. Se a gente colocar o nome "Carlos" e dar o "Submit" ele exibirá "Carlos", dentro da página. Então sabendo disso a gente coloca um script simples em JS. E executado esse processo. Temos o seguinte resultado:
 
-![ex-01.png](../0%20-%20Imagens/XSS%20-%20Refletido/ex-01.png)
+![ex-01.png](../../2%20-%20Imagens/XSS%20-%20Refletido/ex-01.png)
 
 Aqui podemos ver que na url existe o parametro "name" que executa o nome/código que passamos dentro dela! Sendo assim fizemos um XSS funcionar, e se copiarmos a url e esconder dentro de um outro link para o nosso alvo, vai ter o mesmo resultado que o nosso! E em uma situação real poderia ser um script malicioso e assim roubando cookies, sessões, ou até colocando um key-logger dentro do navegador do alvo. Por isso é uma vulnerabilidade tão séria.
 
 Então se você pretende ir testando XSS em um site manualmente, visualize sempre o código fonte da página que carregou o payload e verifique a filtragem que ocorreu.
 
-![ex-02.png](../0%20-%20Imagens/XSS%20-%20Refletido/ex-02.png)
+![ex-02.png](../../2%20-%20Imagens/XSS%20-%20Refletido/ex-02.png)
 
 ### Finalização:
 

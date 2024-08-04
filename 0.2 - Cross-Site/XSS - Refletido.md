@@ -1,10 +1,9 @@
-# XSS - Refletido
-
-# XSS - Refletido
+<h1 align="center">XSS - Refletido</h1>
 
 ### Introdução:
 
 Opa, queria dizer antes tudo, que esse vai ser o meu primeiro artigo escrito! E portanto, não imagino que tenha uma qualidade tão boa, mas ainda sim espero que dê para entender mais ou menos o conceito da vulnerabilidade. Então prazer! Me chamo Follich e falarei um pouco sobre XSS.
+
 
 ### Sobre oque é XSS?
 
@@ -27,13 +26,13 @@ Nós encontramos XSS em pontos de entrada dentro de um site! Como uma barra de p
 
 Então abrindo o metasploitable e indo para a aba de "xss", podemos ver esse campo de inserção perguntando o nosso nome. Se a gente colocar o nome "Carlos" e dar o "Submit" ele exibirá "Carlos", dentro da página. Então sabendo disso a gente coloca um script simples em JS. E executado esse processo. Temos o seguinte resultado:
 
-![ex-01.png](XSS%20-%20Refletido%209e3f6ddbd9d74920923b6e156fc2bc3a/ex-01.png)
+![ex-01.png](../0%20-%20Imagens/XSS%20-%20Refletido/ex-01.png)
 
 Aqui podemos ver que na url existe o parametro "name" que executa o nome/código que passamos dentro dela! Sendo assim fizemos um XSS funcionar, e se copiarmos a url e esconder dentro de um outro link para o nosso alvo, vai ter o mesmo resultado que o nosso! E em uma situação real poderia ser um script malicioso e assim roubando cookies, sessões, ou até colocando um key-logger dentro do navegador do alvo. Por isso é uma vulnerabilidade tão séria.
 
 Então se você pretende ir testando XSS em um site manualmente, visualize sempre o código fonte da página que carregou o payload e verifique a filtragem que ocorreu.
 
-![ex-02.png](XSS%20-%20Refletido%209e3f6ddbd9d74920923b6e156fc2bc3a/ex-02.png)
+![ex-02.png](../0%20-%20Imagens/XSS%20-%20Refletido/ex-02.png)
 
 ### Finalização:
 
@@ -41,4 +40,4 @@ Se algum dia alguém ler isso, muito obrigado por ler! Espero que você tenha en
 
 Obs: É sempre importante dizer que o conteúdo colocado nesse artigo é feito meramente para fins educativos e didáticos e não me responsabilizo por qualquer ato ilegal feito a partir do conhecimento desse artigo por mais simples que ele seja!
 
-                                                                                                                                        Follich - (24/08/02)
+<p align="right">Follich - (24/08/02)</p>
